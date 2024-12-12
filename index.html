@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="ajuda.css">
+     <!---font-awesome pro--->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <!---font-awesome pro--->
+    <title>Suporte</title>
+</head>
+<body>
+<section style="padding-block:20px;" class="dark cemvh">
+    <div class="page-margem">
+    <h1 class="centro">Central de Ajuda <span class="destaque-texto">Stellar print</span></h1> 
+    <div class="oculto search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Qual a sua Dúvida?">
+        <button class="search-button" onclick="search()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+    
+    <div class="centro cards-suporte">
+       <div class="card-sup">
+        <i class="fa-duotone fa-regular fa-book" style="--fa-primary-color: #ffb236; --fa-secondary-color: #fe5a00;"></i>
+            <p class="h2">Manuais</p>
+            <a style="text-decoration: none;" class="right btn-stellar" title="manuais" href="manuais/">Ver Mais</a>
+       </div>
+
+       <div class="card-sup">
+        <i class="fa-duotone fa-solid fa-screwdriver-wrench" style="--fa-primary-color: #ffb236; --fa-secondary-color: #fe5a00;"></i>
+            <p class="h2">Assistência</p>
+            <a style="text-decoration: none;" class="right btn-stellar" title="Assistência" href="assistencia/">Ver Mais</a>
+       </div> 
+
+       
+       <div class="card-sup">
+            <i class="fa-duotone fa-regular fa-badge-check" style="--fa-primary-color: #ffb236; --fa-secondary-color: #fe5a00;"></i>
+            <p class="h2">Garantia</p>
+            <a style="text-decoration: none;" class="right btn-stellar" title="Garantia" href="garantia/">Ver Mais</a>
+       </div> 
+       
+       
+       <div class="card-sup">
+            <i class="fa-duotone fa-solid fa-messages-question" style="--fa-primary-color: #ffb236; --fa-secondary-color: #fe5a00;"></i>  
+            <p class="h2">Perguntas<br>frequentes</p>
+            <a style="text-decoration: none;" class="right btn-stellar" title="Perguntas frequentes" href="perguntas-frequentes/">Ver Mais</a> 
+       </div>
+    </div>
+</div>
+</section>
+</body>
+</html>

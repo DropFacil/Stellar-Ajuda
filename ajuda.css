@@ -1,0 +1,111 @@
+/* Search */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    color: #555;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-button:hover {
+    background:var(--destaque-degrade);
+    color: #ffffff;
+}
+
+.search-results {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/**/
+ .right::after{  
+    content: '\f061';
+    margin-left:10px;
+    font-family: 'Font Awesome 5 Pro';
+ }
+.cards-suporte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha no mobile */
+    justify-content: space-between; /* Distribui os cards uniformemente */
+}
+.card-sup:hover{
+
+    box-shadow: 0 0 20px rgba(254, 89, 0, 0.404),inset 0 0 0 2px #fe5a00;
+}
+.card-sup {
+    transition:box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff1e;
+    border-radius: 12px;
+    width: calc(100%/4 - 20px); /* Cada card ocupa 25% menos margem para 4 na mesma linha */
+    height: 40vh;
+    margin: 10px;
+}
+.card-sup i{
+    font-size:70px;
+}
+@media (max-width: 768px) {
+    .cards-suporte {
+        justify-content: center; /* Centraliza os elementos no mobile */
+    }
+    .card-sup {
+        width: calc(50% - 20px); /* Ajusta para 2 cards por linha no mobile */
+    }
+}
+
+.cemvh{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh !important;
+}
+.page-margem{
+    padding-inline: 50px;
+}
+
+.page-margem{
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 0.5s ease-in-out forwards; /* Aplica a animação */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
